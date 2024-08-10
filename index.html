@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevBurguer🍔</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Bem-vindo à DevBurguer🍔</h1>
+    </div>
+
+    <div class="container-buttons">
+        <button class="show-all">Mostrar tudo <br> For Each</button>
+        <button class="map-all">Mapear <br> Map</button>
+        <button class="sum-all">Somar Tudo <br> reduce</button>
+        <button class="filter-all">Filtrar <br> filter</button>
+        <button onclick="aparecerFormulario()">Comprar Agora</button>
+    </div>
+
+    <ul>
+        <li>
+            <img src="./bacon-egg.png" alt="X-EGG BACON">
+            <p>X-EGG BACON</p>
+            <p class="item-price">R$24,00</p>
+        </li>
+        <li>
+            <img src="./monstruoso-vegan.png" alt="Mostruoso Vegano">
+            <p>Mostruoso Vegano</p>
+            <p class="item-price">R$30,00</p>
+        </li>
+        <li>
+            <img src="./monstruoso.png" alt="Monstruoso">
+            <p>Monstruoso</p>
+            <p class="item-price">R$34,00</p>
+        </li>
+        <li>
+            <img src="./xvegan.png" alt="X-Vegan">
+            <p>X-Vegan</p>
+            <p class="item-price">R$29,00</p>
+        </li>
+        <li>
+            <img src="./xsalada.jpeg" alt="X-Salada">
+            <p>X-Salada</p>
+            <p class="item-price">R$24,00</p>
+        </li>
+        <li>
+            <img src="./xbacon.png" alt="X-BACON">
+            <p>X-BACON</p>
+            <p class="item-price">R$25,00</p>
+        </li>
+        <li>
+            <img src="./cachorro-quente.jpg" alt="Cachorro-Quente">
+            <p>Cachorro-Quente</p>
+            <p class="item-price">R$19,00</p>
+        </li>
+        <li>
+            <img src="./combo-cachorroquente.jpg" alt="Combo Cachorro-Quente">
+            <p>Combo Cachorro-Quente</p>
+            <p class="item-price">R$34,00</p>
+        </li>
+        <li>
+            <img src="./combo-1.jpg" alt="Combo Casal Vegano">
+            <p>Combo Casal Vegano</p>
+            <p class="item-price">R$60,00</p>
+        </li>
+        <li>
+            <img src="./combo-2.jpg" alt="Combo Casal">
+            <p>Combo Casal</p>
+            <p class="item-price">R$70,00</p>
+        </li>
+
+        <li>
+            <img src="./combo-vegano.jpg" alt="Comb">
+            <p>Combo Vegano</p>
+            <p class="item-price">R$55,00</p>
+        </li>
+    </ul>
+
+    <h1 class="bebida">Bebidas e Acompanhamentos</h1>
+    <ul>
+        <li class="bebida">
+            <img src="./chamate.jpg" alt="Chá Mate">
+            <p>Chá Mate</p>
+            <p class="item-price">R$4,00</p>
+        </li>
+        <li class="bebida">
+            <img src="./cocacola.png" alt="Chá Mate">
+            <p>Coca-Cola</p>
+            <p class="item-price">R$9,00</p>
+        </li>
+        <li class="bebida">
+            <img src="./gurana.jpg" alt="Guaraná">
+            <p>Guaraná</p>
+            <p class="item-price">R$6,00</p>
+        </li>
+        <li class="bebida">
+            <img src="./pespi.jpg" alt="Pepsi">
+            <p>Pepsi</p>
+            <p class="item-price">R$6,00</p>
+        </li>
+        <li class="bebida">
+            <img src="./guravita.jpg" alt="Guaravita">
+            <p>Guaravita</p>
+            <p class="item-price">R$5,00</p>
+        </li>
+        <li class="bebida">
+            <img src="./batata.jpg" alt="Batata">
+            <p>Batata</p>
+            <p class="item-price">R$10,00</p>
+        </li>
+        <li class="bebida">
+            <img src="./cookies.jpg" alt="Cookies">
+            <p>Cookies</p>
+            <p class="item-price">R$9,00</p>
+        </li>
+    </ul>
+
+    <div class="formulario" id="formulario">
+        <button class="fechar" onclick="desaparecerFormulario()">Fechar</button>
+        <form class="fale-conosco" action="https://formsubmit.co/thais.carolina05@gmail.com" method="POST">
+            <input placeholder="Seu nome" type="text" name="nome" class="input">
+            <input placeholder="Seu telefone" type="tel" name="telefone" class="input">
+            <input placeholder="Seu Pedido" type="text" name="Anotar Pedido" class="input">
+            <button class="email">Anotar Pedido</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 DevBurguer. Todos os direitos reservados.</p>
+    </div>
+
+   
+    
+    <script>
+        function aparecerFormulario() {
+            document.getElementById('formulario').style.display = 'flex';
+        }
+
+        function desaparecerFormulario() {
+            document.getElementById('formulario').style.display = 'none';
+        }
+    </script>
+
+     <script src="./products.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
